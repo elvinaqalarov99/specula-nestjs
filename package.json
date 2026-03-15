@@ -1,0 +1,36 @@
+{
+  "name": "@spectra/nestjs",
+  "version": "0.1.0",
+  "description": "Zero-config NestJS middleware that auto-generates live API docs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@nestjs/common": ">=9.0.0",
+    "express": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@types/express": "^4.17.21",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["nestjs", "openapi", "swagger", "api-docs", "spectra"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elvinaqalarov99/spectra-nestjs.git"
+  },
+  "homepage": "https://github.com/elvinaqalarov99/spectra-nestjs#readme",
+  "bugs": {
+    "url": "https://github.com/elvinaqalarov99/spectra-nestjs/issues"
+  }
+}
